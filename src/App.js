@@ -8,16 +8,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Home />
         <Routes>
-          <Route path="/" element={<Header />}>
-            {/* <Home /> */}
-          </Route>
-          <Route path="/login">Login</Route>
-          <Route path="/checkout">
-            Checkout
-            {/* <Header /> */}
-          </Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<h1>Login page</h1>}></Route>
+          <Route path="/checkout" element={<h1>Checkout page</h1>}></Route>
         </Routes>
       </div>
     </BrowserRouter>
